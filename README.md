@@ -1,14 +1,10 @@
 an attempt to document my coding style as a series of rules that can be easily
-consumed by an llm.
+consumed by an llm. I then feed these rules into an llm, along with a code
+generation command, and what should happen is that I get quickly produced code
+in my own style.
 
-this repo is a series of markdown files, combined with the `tiny_pair` gem,
-which together can hopefully produce code in my preferred style (or your
-preferred style) quickly. one of the challenges with LLM-generated code is that
-it's not necessarily in the style you might prefer, and while being overly picky
-about style is not a good thing, I believe there's an important difference
-between a generic style and a tailored style.
-
-the style preferences are organized into sub-folders.
+the style preferences are organized into a file tree that will programmatically
+compose an llm prompt:
 
 ```plaintext
 + ruby
